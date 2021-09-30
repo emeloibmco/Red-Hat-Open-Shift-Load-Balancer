@@ -135,7 +135,7 @@ Para realizar la prueba de funcionmaiento del Load Balancer, se desplegará la a
    
    <br />
 
-   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/app_ok.PNG"></p>
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/App_ok.gif"></p>
 
    <br />
 
