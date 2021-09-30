@@ -16,10 +16,6 @@
 11. [Autores](#Autores-black_nib)
 <br />
 
-<p align="center"><img src="Images/IBMCloudShell.png"></p>
-
-<br />
-
 ## Pre Requisitos :pencil:
 * Cuenta en <a href="https://cloud.ibm.com/"> IBM Cloud</a> <img width="25" src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/ibm-cloud-logo.png">.
 * Contar con una VPC. Para mayor información puede consultar como<a href="https://github.com/emeloibmco/VPC-Despliegue-VSI-Acceso-SSH#Crear-VPC-cloud"> crear VPC</a>. 
