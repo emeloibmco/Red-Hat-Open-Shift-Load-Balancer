@@ -404,7 +404,7 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se inidcan pa
 2. Para probar el funcionamiento del Load Balancer puede realizar dos procedimiento:
    <br />
    
-   * Use el comando ```curl```y observe la respuesta de la aplicación mediante IBM Coud Shell. Para ello coloque:
+   * Use el comando ```curl```, el External-IP y el puerto del Load Balancer y observe la respuesta de la aplicación mediante IBM Coud Shell. Para ello coloque:
    
      ```
      curl <external-ip>:port
@@ -421,7 +421,7 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se inidcan pa
 
      <br />
  
-    * En el navegador visualice la aplicación mediante el External-IP del Load Balancer. Para ello coloque:
+    * En el navegador visualice la aplicación mediante el External-IP y el puerto del Load Balancer. Para ello coloque:
    
      ```
      <external-ip>:port
