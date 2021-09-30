@@ -21,8 +21,8 @@
 <br />
 
 ## Pre Requisitos :pencil:
-* Cuenta en <a href="https://cloud.ibm.com/"> IBM Cloud</a>.
-* Contar con un grupo de recursos específico para la implementación de los recursos.
+* <img width="26" src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/ibm-cloud-logo.png"> Cuenta en <a href="https://cloud.ibm.com/"> IBM Cloud</a>.
+* Grupo de recursos específico para la implementación de los recursos.
 * Contar con una VPC. Puede consultar en <a href="https://github.com/emeloibmco/VPC-Despliegue-VSI-Acceso-SSH#Crear-VPC-cloud"> Crear VPC</a>. 
 * Contar con una subred en VPC. Puede consultar en <a href="https://github.com/emeloibmco/VPC-Despliegue-VSI-Acceso-SSH#Crear-subred-wrench"> Crear subred</a>. 
 * Contar con una VSI Ubuntu. Puede consultar en <a href="https://github.com/emeloibmco/VPC-Despliegue-VSI-Acceso-SSH#Desplegar-VSI-en-VPC-computer"> Desplegar VSI en VPC</a>.
