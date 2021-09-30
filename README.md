@@ -298,7 +298,7 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
 
    <br />
    
-   * En la sección ```ports``` reemplace la variable ```<port>``` por el valor del puerto que se ubica también en el .yaml del pod de la aplicación. En la siguiente imagen puede observar donde se encuentra el puerto.
+   * En la sección ```ports``` reemplace la variable ```<port>``` con el valor del puerto que se ubica también en el .yaml del pod de la aplicación. En la siguiente imagen puede observar donde se encuentra el puerto.
    <br />
 
    <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/Puerto.gif"></p>
