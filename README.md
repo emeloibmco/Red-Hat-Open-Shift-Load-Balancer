@@ -386,6 +386,7 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se inidcan pa
    <br />
    
    ```
+    
     oc describe svc myloadbalancer -n <namespace>
    ```
    
@@ -399,6 +400,46 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se inidcan pa
    <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/url_alb_publico.PNG"></p>
 
    <br />
+   
+2. Para probar el funcionamiento del Load Balancer puede realizar dos procedimiento:
+   <br />
+   
+   * Use el comando ```curl```y observe la respuesta de la aplicación mediante IBM Coud Shell. Para ello coloque:
+   
+     ```
+     curl <external-ip>:port
+     ```
+
+     Ejemplo:
+
+     ```
+     curl 123f8e58-us-east.lb.appdomain.cloud:8080
+     ``` 
+     <br />
+
+     <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/curl_alb_publico.PNG"></p>
+
+     <br />
+ 
+    * En el navegador visualice la aplicación mediante el External-IP del Load Balancer. Para ello coloque:
+   
+     ```
+     <external-ip>:port
+     ```
+
+     Ejemplo:
+
+     ```
+     123f8e58-us-east.lb.appdomain.cloud:8080
+     ``` 
+     <br />
+
+     <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/browser_alb_publico.PNG"></p>
+
+     <br />
+   
+      
+   
    
    
 <br />
