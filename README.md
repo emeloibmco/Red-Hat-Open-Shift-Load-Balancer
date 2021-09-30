@@ -186,6 +186,17 @@ Antes de realizar la respectiva configuración para los Load Balancer debe insta
 
 
 ## Configurar ALB for VPC :cloud:
+Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a la red pública o privada. Dentro de la carpeta ```Archivos ALB```de este repositorio puede encontrar 2 archivos .yml que contiene las configuraciones necesarias para cada caso. Siga los pasos que se presentan a continuación, teniendo en cuenta el tipo de solicitud (pública o privada) que su aplicación recibirá:
+<br />
+
+* [ALB para solicitudes públicas](#ALB-para-solicitudes-públicas)
+* [ALB para solicitudes privadas](#ALB-para-solicitudes-privadas)
+<br />
+
+### ALB para solicitudes públicas
+<br />
+
+### ALB para solicitudes privadas
 <br />
 
 ## Prueba de funcionamiento de ALB for VPC :wrench:
