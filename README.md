@@ -120,8 +120,12 @@ Para realizar la prueba de funcionmaiento del Load Balancer, se desplegará la a
 
    <br />
 
+3. Despliegue la aplicación en el clúster con el comando:
 
-<br />
+   ```
+   npx nodeshift --strictSSL=false --dockerImage=nodeshift/ubi8-s2i-web-app --imageTag=10.x --build.env OUTPUT_DIR=dist/angular-web-app --expose
+   ```
+   <br />
 
 ## Clonar repositorio
 <br />
