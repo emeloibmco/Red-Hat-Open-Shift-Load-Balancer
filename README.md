@@ -203,14 +203,14 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
 
 2. Dentro de esta carpeta puede encontrar el archivo ```myloadbalancer.yaml```. Este archivo contiene lo siguiente:
    
-   ```bash
+   ```cmd
    apiVersion: v1
    kind: Service
    metadata:
      name: myloadbalancer
      annotations:
        service.kubernetes.io/ibm-load-balancer-cloud-provider-ip-type: "public"
-       service.kubernetes.io/ibm-load-balancer-cloud-provider-vpc-subnets: "<subnet_ID>""
+       service.kubernetes.io/ibm-load-balancer-cloud-provider-vpc-subnets: "<subnet_ID>"
        service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: "<zone>"
    spec:
     type: LoadBalancer
