@@ -7,7 +7,7 @@
 2. [Acceder al clúster](#Acceder-al-clúster)
 3. [Crear proyecto](#Crear-proyecto)
 4. [Desplegar aplicación Angular Web List](#Desplegar-aplicación-Angular-Web-List)
-5. [Clonar repositorio](#Clonar-repositorio)
+5. [Instalar plugin y clonar repositorio](#Instalar-plugin-y-clonar-repositorio)
 6. [Configurar ALB for VPC](#Configurar-ALB-for-VPC-cloud)
 7. [Prueba de funcionamiento de ALB for VPC](#CPrueba-de-funcionamiento-de-ALB-for-VPC-wrench)
 8. [Configurar NLB for VPC](#Configurar-NLB-for-VPC-closed_lock_with_key)
@@ -139,23 +139,41 @@ Para realizar la prueba de funcionmaiento del Load Balancer, se desplegará la a
 
    <br />
 
-## Clonar repositorio
-Antes de realizar la respectiva configuración para los Load Balancer debe clonar este repositorio, el cual contiene los archivos necesarios para llevar a cabo el procedimiento. Para ello, realice lo siguiente:
+## Instalar plugin y clonar repositorio
+Antes de realizar la respectiva configuración para los Load Balancer debe instalar un plugin y clonar el presente repositorio, el cual contiene los archivos necesarios para llevar a cabo el procedimiento. Para ello, realice lo siguiente:
 <br />
 
 1. Salga de la carpeta *AngularWebList* ```cd ..```.
-2. Clone el repositorio con el comando:
+   
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/salir_carpeta_listas.PNG"></p>
+
+   <br />
+
+2. Instale el plugin ```infrastructure-service```, el cual se necesitará para la configiración del ALB y NLB. Utilice el siguiente comando:
+
+   ```
+   ibmcloud plugin install infrastructure-service
+   ```
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/plugin.PNG"></p>
+
+   <br />
+   
+3. Clone el repositorio con el comando:
    
    ```
    git clone https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer
    ```
    <br />
 
-   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/ClonarRepoLB.PNG"></p>
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/Clonar_RepoLB.PNG"></p>
 
    <br />
 
-2. Acceda a la carpeta ```Red-Hat-Open-Shift-Load-Balancer``` con:
+4. Acceda a la carpeta ```Red-Hat-Open-Shift-Load-Balancer``` con:
 
    ```
    cd Red-Hat-Open-Shift-Load-Balancer/
@@ -165,9 +183,7 @@ Antes de realizar la respectiva configuración para los Load Balancer debe clona
    <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/cd_carpeta_LB.PNG"></p>
 
    <br />
-   
 
-<br />
 
 ## Configurar ALB for VPC :cloud:
 <br />
