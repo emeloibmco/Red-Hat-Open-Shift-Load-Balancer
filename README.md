@@ -288,7 +288,7 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    
    <br />
 
-   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/alb-publico-ok.gif"></p>
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/alb-publico-privado-ok.gif"></p>
 
    <br />
    
