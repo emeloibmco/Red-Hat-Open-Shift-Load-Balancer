@@ -186,7 +186,7 @@ Antes de realizar la respectiva configuración para los Load Balancer debe insta
 
 
 ## Configurar ALB for VPC :cloud:
-Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a la red pública o privada. Dentro de la carpeta ```Archivos ALB```de este repositorio puede encontrar 2 archivos .yml que contiene las configuraciones necesarias para cada caso. Siga los pasos que se presentan a continuación, teniendo en cuenta el tipo de solicitud (pública o privada) que su aplicación recibirá:
+Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a la red pública o privada. Dentro de la carpeta ```Archivos ALB```de este repositorio puede encontrar 2 archivos .yaml que contiene las configuraciones necesarias para cada caso. Siga los pasos que se presentan a continuación, teniendo en cuenta el tipo de solicitud (pública o privada) que su aplicación recibirá:
 <br />
 
 * [ALB para solicitudes públicas](#ALB-para-solicitudes-públicas)
@@ -194,6 +194,34 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
 <br />
 
 ### ALB para solicitudes públicas
+1. Acceda a la carpeta ```Archivos ALB``` con el comando:
+   
+   ```
+   cd Archivos\ ALB
+   ```
+   <br />
+
+2. Dentro de esta carpeta puede encontrar el archivo ```myloadbalancer.yaml```. Este archivo contiene lo siguiente:
+   
+   ```powershell
+   apiVersion: v1
+   kind: Service
+   metadata:
+     name: myloadbalancer
+     annotations:
+       service.kubernetes.io/ibm-load-balancer-cloud-provider-ip-type: "public"
+       service.kubernetes.io/ibm-load-balancer-cloud-provider-vpc-subnets: "0767-5fe01a4c-03bf-419c-a09e-86ae1bb2af1d"
+       service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: "us-east-2"
+   spec:
+    type: LoadBalancer
+    selector:
+       deployment: listas-1
+    ports:
+      - name: http
+        protocol: TCP
+        port: 8080
+        targetPort: 8080
+   ```
 <br />
 
 ### ALB para solicitudes privadas
