@@ -140,7 +140,7 @@ Para realizar la prueba de funcionmaiento del Load Balancer, se desplegará la a
    <br />
 
 ## Instalar plugin y clonar repositorio
-Antes de realizar la respectiva configuración para los Load Balancer debe instalar un plugin y clonar el presente repositorio, el cual contiene los archivos necesarios para llevar a cabo el procedimiento. Para ello, realice lo siguiente:
+Antes de realizar la respectiva configuración para los Load Balancer, debe instalar un plugin y clonar el presente repositorio, el cual contiene los archivos necesarios para llevar a cabo el procedimiento. Para ello, realice lo siguiente:
 <br />
 
 1. Salga de la carpeta *AngularWebList* ```cd ..```.
