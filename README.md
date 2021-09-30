@@ -187,6 +187,7 @@ Antes de realizar la respectiva configuración para los Load Balancer debe insta
 
 ## Configurar ALB for VPC :cloud:
 Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a la red pública o privada. Dentro de la carpeta ```Archivos ALB```de este repositorio puede encontrar 2 archivos .yaml que contiene las configuraciones necesarias para cada caso. Siga los pasos que se presentan a continuación, teniendo en cuenta el tipo de solicitud (pública o privada) que su aplicación recibirá:
+
 <br />
 
 1. Acceda a la carpeta ```Archivos ALB``` con el comando:
@@ -201,8 +202,10 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    <br />
 
 2. Dentro de esta carpeta puede encontrar 2 archivos:
+   <br />
    
-   * **Red pública** ➡ ```myloadbalancer.yaml```. Este archivo contiene lo siguiente:
+   * **ALB público** ➡ ```myloadbalancer.yaml```. Este archivo contiene lo siguiente:
+   <br />
    
    ```cmd
    apiVersion: v1
@@ -225,7 +228,9 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    ```
    <br />
    
-   * **Red privada** ➡ ```myloadbalancerprivate.yaml```. Este archivo contiene lo siguiente:
+   * **ALB privado** ➡ ```myloadbalancerprivate.yaml```. Este archivo contiene lo siguiente:
+   <br />
+   
    ```cmd
    apiVersion: v1
    kind: Service
