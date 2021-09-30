@@ -1,4 +1,4 @@
-# Red Hat OpenShift - Load-Balancer <img width="26" src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Images/logo_oc.png">☁
+# Red Hat OpenShift - Load Balancer <img width="26" src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Images/logo_oc.png">☁
 
 <br />
 
