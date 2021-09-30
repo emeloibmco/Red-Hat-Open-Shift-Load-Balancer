@@ -247,9 +247,21 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    <br />
    
    * En la sección ```selector``` reemplace la línea <selector_key>: <selector_value> con la clave y valor del selector, que puede localizar en los labels del pod de la aplicación. Ejemplo ```deployment: listas-1```. En la siguiente imagen se muestra donde se ubica el selector.
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/Labels.gif"></p>
+
+   <br />
    
+   * En la sección ```ports``` reemplace la variable ```<port>``` por el valor del puerto que se ubica también en el .yaml del pod de la aplicación. En la siguiente imagen puede observar donde se encuentra el puerto.
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/Puerto.gif"></p>
+
+   <br />
    
-<br />
+   Cuando termine de aplicar los cambios presione ```Ctrl s``` para guardar y ```Ctrl x``` para salir del editor.
+   <br />
 
 ### ALB para solicitudes privadas :lock:
 <br />
