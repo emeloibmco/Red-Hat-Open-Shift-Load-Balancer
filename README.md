@@ -189,11 +189,6 @@ Antes de realizar la respectiva configuración para los Load Balancer debe insta
 Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a la red pública o privada. Dentro de la carpeta ```Archivos ALB```de este repositorio puede encontrar 2 archivos .yaml que contiene las configuraciones necesarias para cada caso. Siga los pasos que se presentan a continuación, teniendo en cuenta el tipo de solicitud (pública o privada) que su aplicación recibirá:
 <br />
 
-* [ALB para solicitudes públicas](#ALB-para-solicitudes-públicas-unlock)
-* [ALB para solicitudes privadas](#ALB-para-solicitudes-privadas-lock)
-<br />
-
-### ALB para solicitudes públicas :unlock:
 1. Acceda a la carpeta ```Archivos ALB``` con el comando:
    
    ```
@@ -205,7 +200,9 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
 
    <br />
 
-2. Dentro de esta carpeta puede encontrar el archivo ```myloadbalancer.yaml```. Este archivo contiene lo siguiente:
+2. Dentro de esta carpeta puede encontrar 2 archivos:
+   
+   * **Red pública** ➡ ```myloadbalancer.yaml```. Este archivo contiene lo siguiente:
    
    ```cmd
    apiVersion: v1
@@ -228,8 +225,32 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    ```
    <br />
    
-   Deberá realizar unas modificaciones al archivo con datos de su subred y aplicación. Para ello con el comando nano abra el archivo y realice los respectivos cambios:
+   * **Red privada** ➡ ```myloadbalancerprivate.yaml```. Este archivo contiene lo siguiente:
+   ```cmd
+   apiVersion: v1
+   kind: Service
+   metadata:
+     name: myloadbalancerprivate
+     annotations:
+       service.kubernetes.io/ibm-load-balancer-cloud-provider-ip-type: "private"
+       service.kubernetes.io/ibm-load-balancer-cloud-provider-vpc-subnets: "<subnet_ID>"
+       service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: "<zone>"
+   spec:
+    type: LoadBalancer
+    selector:
+       <selector_key>: <selector_value>
+    ports:
+      - name: http
+        protocol: TCP
+        port: <port>
+        targetPort: <port>
+   ```
    
+   Deberá realizar unas modificaciones a cada archivo con los datos de la subred y aplicación. Para ello con el comando nano abra el archivo y realice los respectivos cambios:
+   <br />
+   
+   * **Red pública**
+    
    ```
    nano myloadbalancer.yaml
    ```
@@ -238,6 +259,18 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/nano_publico.PNG"></p>
 
    <br />
+   
+   * **Red privada**
+   
+   ```
+   nano myloadbalancerprivate.yaml
+   ```
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/nano_publico.PNG"></p>
+
+   <br />
+   
    
    Los cambios que debe realizar son:
    * En la línea ```service.kubernetes.io/ibm-load-balancer-cloud-provider-vpc-subnets: "<subnet_ID>"``` coloque entre comillas el ID de su subred. Ejemplo ```service.kubernetes.io/ibm-load-balancer-cloud-provider-vpc-subnets: "0767-5fe01a4c-03bf-419c-a09e-86ae1bb2af1d"```. Para encontrar el ID de la subred, en la consola de IBM dentro del clúster que está trabajando, seleccione la pestaña ```Worker nodes```, de click sobre uno de los nodos trabajadores y visualice el ID en la sección ```Subnet```.
@@ -293,10 +326,16 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    <br />
    
    
-### ALB para solicitudes privadas :lock:
-<br />
 
 ## Prueba de funcionamiento de ALB for VPC :wrench:
+* [ALB para solicitudes públicas](#ALB-para-solicitudes-públicas-unlock)
+* [ALB para solicitudes privadas](#ALB-para-solicitudes-privadas-lock)
+<br />
+
+### ALB para solicitudes públicas :unlock:
+<br />
+
+### ALB para solicitudes privadas :lock:
 <br />
 
 ## Configurar NLB for VPC :closed_lock_with_key:
