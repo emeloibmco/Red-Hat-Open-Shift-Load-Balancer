@@ -9,7 +9,7 @@
 4. [Desplegar aplicación Angular Web List](#Desplegar-aplicación-Angular-Web-List)
 5. [Instalar plugin y clonar repositorio](#Instalar-plugin-y-clonar-repositorio)
 6. [Configurar ALB for VPC](#Configurar-ALB-for-VPC-cloud)
-7. [Prueba de funcionamiento de ALB for VPC](#CPrueba-de-funcionamiento-de-ALB-for-VPC-wrench)
+7. [Prueba de funcionamiento de ALB for VPC](#Prueba-de-funcionamiento-de-ALB-for-VPC-wrench)
 8. [Configurar NLB for VPC](#Configurar-NLB-for-VPC-closed_lock_with_key)
 9. [Prueba de funcionamiento de NLB for VPC](#Prueba-de-funcionamiento-de-NLB-for-VPC-computer)
 10. [Referencias](#Referencias-mag)
