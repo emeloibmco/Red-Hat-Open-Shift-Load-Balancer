@@ -201,6 +201,10 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    ```
    <br />
 
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/carpeta_alb.PNG"></p>
+
+   <br />
+
 2. Dentro de esta carpeta puede encontrar el archivo ```myloadbalancer.yaml```. Este archivo contiene lo siguiente:
    
    ```cmd
@@ -263,6 +267,32 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    Cuando termine de aplicar los cambios presione ```Ctrl s``` para guardar y ```Ctrl x``` para salir del editor.
    <br />
 
+3. Cree el servicio del Load Balancer con el comando:
+   
+   ```
+   oc apply -f myloadbalancer.yaml -n <namespace>
+   ```
+   
+   Ejemplo:
+   
+   ```
+   oc apply -f myloadbalancer.yaml -n angular-web-list
+   ```
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/1_oc_apply_publico.PNG"></p>
+
+   <br />
+
+4. Verifique el servicio ha sido creado. Para ello, cambia el rol a ```Administrator``` y seleccione la opción ```Networking``` ➡ ```services```. Identifique el servicio ```myloadbalancer``` que ha sido creado.
+   
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/alb-publico-ok.gif"></p>
+
+   <br />
+   
+   
 ### ALB para solicitudes privadas :lock:
 <br />
 
