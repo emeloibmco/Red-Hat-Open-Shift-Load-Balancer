@@ -50,7 +50,7 @@
 <br />
 
 ## Referencias :mag:
-* <a href="https://cloud.ibm.com/docs/openshift?topic=openshift-vpc-lbaas">VPC: Exposing apps with load balancers for VPC</a>..
+* <a href="https://cloud.ibm.com/docs/openshift?topic=openshift-vpc-lbaas">VPC: Exposing apps with load balancers for VPC</a>.
 <br />
 
 ## Autores :black_nib:
