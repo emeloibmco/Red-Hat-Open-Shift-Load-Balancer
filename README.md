@@ -222,6 +222,32 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
         port: <port>
         targetPort: <port>
    ```
+   <br />
+   
+   Deberá realizar unas modificaciones al archivo con datos de su subred y aplicación. Para ello con el comando nano abra el archivo y realice los respectivos cambios:
+   
+   ```
+   nano myloadbalancer.yaml
+   ```
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/nano_publico.PNG"></p>
+
+   <br />
+   
+   Los cambios que debe realizar son:
+   * En la línea ```service.kubernetes.io/ibm-load-balancer-cloud-provider-vpc-subnets: "<subnet_ID>"``` coloque entre comillas el ID de su subred. Ejemplo ```service.kubernetes.io/ibm-load-balancer-cloud-provider-vpc-subnets: "0767-5fe01a4c-03bf-419c-a09e-86ae1bb2af1d"```. Para encontrar el ID de la subred, en la consola de IBM dentro del clúster que está trabajando, seleccione la pestaña ```Worker nodes```, de click sobre uno de los nodos trabajadores y en la sección ```Subnet```podrá visualizar el ID.
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/Id_Subnet.PNG"></p>
+
+   <br />
+   
+   * En la línea ```service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: "<zone>"``` coloque entre comillas la zona en la cual está desplegado su clúster. Ejemplo ```service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: "us-east-2"```.
+   <br />
+   
+   
+   
 <br />
 
 ### ALB para solicitudes privadas
