@@ -254,7 +254,8 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    Deberá realizar unas modificaciones a cada archivo con los datos de la subred y aplicación. Para ello con el comando nano abra el archivo y realice los respectivos cambios:
    <br />
    
-   * **Red pública**
+   * **ALB público**
+   <br />
     
    ```
    nano myloadbalancer.yaml
@@ -265,14 +266,15 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
 
    <br />
    
-   * **Red privada**
+   * **ALB privado**
+   <br />
    
    ```
    nano myloadbalancerprivate.yaml
    ```
    <br />
 
-   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/nano_publico.PNG"></p>
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/nano_privado.PNG"></p>
 
    <br />
    
@@ -307,6 +309,9 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
 
 3. Cree el servicio del Load Balancer con el comando:
    
+   * **ALB público**
+   <br />
+   
    ```
    oc apply -f myloadbalancer.yaml -n <namespace>
    ```
@@ -319,6 +324,24 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    <br />
 
    <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/1_oc_apply_publico.PNG"></p>
+
+   <br />
+   
+   * **ALB privado**
+   <br />
+   
+   ```
+   oc apply -f myloadbalancerprivate.yaml -n <namespace>
+   ```
+   
+   Ejemplo:
+   
+   ```
+   oc apply -f myloadbalancerprivate.yaml -n angular-web-list
+   ```
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/1_oc_apply_privado.PNG"></p>
 
    <br />
 
