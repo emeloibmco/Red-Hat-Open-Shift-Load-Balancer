@@ -35,7 +35,18 @@ Para acceder al clúster de OpenShift, complete los siguientes pasos:
 
 <br />
 
-2. Ingrese a la consola web de OpenShift presionando el botón ```OpenShift web console```. 
+2. Asegúrese de estar en la región donde tiene desplegados sus recursos. Si necesita cambiar de región utilice el comando:
+
+   ```
+   ibmcloud target -r <region>
+   ```   
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/Region.PNG"></p>
+
+   <br />
+
+3. Ingrese a la consola web de OpenShift presionando el botón ```OpenShift web console```. 
 <br />
 
 <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/AccederConsolaOC.PNG"></p>
@@ -43,7 +54,7 @@ Para acceder al clúster de OpenShift, complete los siguientes pasos:
 <br />
 
 
-3. Posteriormente de click sobre su correo (parte superior derecha) y luego en la opción ```Copy Login Command```. Una vez cargue la nueva ventana, de click en la opción ```Display Token```. Copie el comando que sale en la opción ```Log in with this token``` y colóquelo en el IBM Cloud Shell para iniciar sesión y acceder a su clúster de OpenShift.
+4. Posteriormente de click sobre su correo (parte superior derecha) y luego en la opción ```Copy Login Command```. Una vez cargue la nueva ventana, de click en la opción ```Display Token```. Copie el comando que sale en la opción ```Log in with this token``` y colóquelo en el IBM Cloud Shell para iniciar sesión y acceder a su clúster de OpenShift.
 <br />
 
 <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/TokenFinal.gif"></p>
