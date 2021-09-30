@@ -4,12 +4,15 @@
 
 ## Índice  📰
 1. [Pre-Requisitos](#Pre-Requisitos-pencil)
-2. [Configuración de ALB for VPC](#Configuración-de-ALB-for-VPC-cloud)
-3. [Prueba de funcionamiento de ALB for VPC](#CPrueba-de-funcionamiento-de-ALB-for-VPC-wrench)
-4. [Configuración de NLB for VPC](#Configuración-de-NLB-for-VPC-closed_lock_with_key)
-5. [Prueba de funcionamiento de NLB for VPC](#Prueba-de-funcionamiento-de-NLB-for-VPC-computer)
-6. [Referencias](#Referencias-mag)
-7. [Autores](#Autores-black_nib)
+2. [Acceso al clúster](#Acceso-al-clúster)
+3. [Despliegue de aplicación Angular Web List](#Despliegue-de-aplicación-Angular-Web-List)
+4. [Clonar repositorio](#Clonar-repositorio)
+5. [Configuración de ALB for VPC](#Configuración-de-ALB-for-VPC-cloud)
+6. [Prueba de funcionamiento de ALB for VPC](#CPrueba-de-funcionamiento-de-ALB-for-VPC-wrench)
+7. [Configuración de NLB for VPC](#Configuración-de-NLB-for-VPC-closed_lock_with_key)
+8. [Prueba de funcionamiento de NLB for VPC](#Prueba-de-funcionamiento-de-NLB-for-VPC-computer)
+9. [Referencias](#Referencias-mag)
+10. [Autores](#Autores-black_nib)
 <br />
 
 <p align="center"><img src="Images/IBMCloudShell.png"></p>
@@ -19,6 +22,15 @@
 ## Pre Requisitos :pencil:
 * Contar con una cuenta en <a href="https://cloud.ibm.com/"> IBM Cloud </a>.
 * Contar con un grupo de recursos específico para la implementación de los recursos.
+<br />
+
+## Acceso al clúster
+<br />
+
+## Despliegue de aplicación Angular Web List
+<br />
+
+## Clonar repositorio
 <br />
 
 ## Configuración de ALB for VPC :cloud:
