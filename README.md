@@ -259,6 +259,9 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/Puerto.gif"></p>
 
    <br />
+   
+   Cuando termine de aplicar los cambios presione ```Ctrl s``` para guardar y ```Ctrl x``` para salir del editor.
+   <br />
 
 ### ALB para solicitudes privadas :lock:
 <br />
