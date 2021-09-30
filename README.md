@@ -251,7 +251,7 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
         targetPort: <port>
    ```
    
-   Deberá realizar unas modificaciones a cada archivo con los datos de la subred y aplicación. Para ello con el comando nano abra el archivo y realice los respectivos cambios:
+   Deberá realizar una serie de modificaciones en cada archivo con los datos de la subred y aplicación. Para ello con el comando nano abra el archivo y realice los respectivos cambios:
    
    <br />
    
