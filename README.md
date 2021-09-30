@@ -55,6 +55,32 @@ Para acceder al clúster de OpenShift, complete los siguientes pasos:
 <br />
 
 ## Crear proyecto
+Debe crear un proyecto en el cúal desplegará la aplicación y realizará la configuración para el Load Balancer. Complete los siguientes pasos:
+<br />
+
+1. En la consola de OpenShift cree un nuevo proyecto. Para ello, asegúrese de estar en el rol de ```Developer```, de click en la pestaña ```Project``` y luego ```Create Project```. Allí, asígne un nombre y de click en el botón ```Create```.
+<br />
+
+<p align="center"><img src="Images/Crear-Proyecto.gif"></p>
+
+<br />
+
+2. Acceda al proyecto creado en IBM Cloud Shell. Para ello utilice el comando:
+
+   ```
+   oc project <nombre_proyecto>
+   ```
+
+   Ejemplo:
+
+   ```
+   oc project angular-web-list
+   ```
+   <br />
+
+   <p align="center"><img src="Images/AccesoProyecto.PNG"></p>
+
+   <br />
 <br />
 
 ## Desplegar aplicación Angular Web List
