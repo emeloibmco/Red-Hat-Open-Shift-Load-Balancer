@@ -246,6 +246,7 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    * En la línea ```service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: "<zone>"``` coloque entre comillas la zona en la cual está desplegado su clúster. Ejemplo ```service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: "us-east-2"```.
    <br />
    
+   * En la sección ```selector``` reemplace la línea <selector_key>: <selector_value> con la clave y valor del selector, que puede localizar en los labels del pod de la aplicación. Ejemplo ```deployment: listas-1```. En la siguiente imagen se muestra donde se ubica el selector.
    
    
 <br />
