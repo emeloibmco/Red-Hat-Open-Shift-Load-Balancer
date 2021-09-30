@@ -4,15 +4,16 @@
 
 ## Índice  📰
 1. [Pre-Requisitos](#Pre-Requisitos-pencil)
-2. [Acceso al clúster](#Acceso-al-clúster)
-3. [Despliegue de aplicación Angular Web List](#Despliegue-de-aplicación-Angular-Web-List)
-4. [Clonar repositorio](#Clonar-repositorio)
-5. [Configuración de ALB for VPC](#Configuración-de-ALB-for-VPC-cloud)
-6. [Prueba de funcionamiento de ALB for VPC](#CPrueba-de-funcionamiento-de-ALB-for-VPC-wrench)
-7. [Configuración de NLB for VPC](#Configuración-de-NLB-for-VPC-closed_lock_with_key)
-8. [Prueba de funcionamiento de NLB for VPC](#Prueba-de-funcionamiento-de-NLB-for-VPC-computer)
-9. [Referencias](#Referencias-mag)
-10. [Autores](#Autores-black_nib)
+2. [Acceder al clúster](#Acceder-al-clúster)
+3. [Crear proyecto](#Crear-proyecto)
+4. [Desplegar aplicación Angular Web List](#Desplegar-aplicación-Angular-Web-List)
+5. [Clonar repositorio](#Clonar-repositorio)
+6. [Configurar ALB for VPC](#Configurar-ALB-for-VPC-cloud)
+7. [Prueba de funcionamiento de ALB for VPC](#CPrueba-de-funcionamiento-de-ALB-for-VPC-wrench)
+8. [Configurar NLB for VPC](#Configurar-NLB-for-VPC-closed_lock_with_key)
+9. [Prueba de funcionamiento de NLB for VPC](#Prueba-de-funcionamiento-de-NLB-for-VPC-computer)
+10. [Referencias](#Referencias-mag)
+11. [Autores](#Autores-black_nib)
 <br />
 
 <p align="center"><img src="Images/IBMCloudShell.png"></p>
@@ -24,29 +25,32 @@
 * Contar con un grupo de recursos específico para la implementación de los recursos.
 <br />
 
-## Acceso al clúster
+## Acceder al clúster
 <br />
 
-## Despliegue de aplicación Angular Web List
+## Crear proyecto
+<br />
+
+## Desplegar aplicación Angular Web List
 <br />
 
 ## Clonar repositorio
 <br />
 
-## Configuración de ALB for VPC :cloud:
+## Configurar ALB for VPC :cloud:
 <br />
 
 ## Prueba de funcionamiento de ALB for VPC :wrench:
 <br />
 
-## Configuración de NLB for VPC :closed_lock_with_key:
+## Configurar NLB for VPC :closed_lock_with_key:
 <br />
 
 ## Prueba de funcionamiento de NLB for VPC :computer:
 <br />
 
 ## Referencias :mag:
-* <a href="https://cloud.ibm.com/docs/openshift?topic=openshift-vpc-lbaas">VPC: Exposing apps with load balancers for VPC</a>..
+* <a href="https://cloud.ibm.com/docs/openshift?topic=openshift-vpc-lbaas">VPC: Exposing apps with load balancers for VPC</a>.
 <br />
 
 ## Autores :black_nib:
