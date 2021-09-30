@@ -126,6 +126,10 @@ Para realizar la prueba de funcionmaiento del Load Balancer, se desplegará la a
    npx nodeshift --strictSSL=false --dockerImage=nodeshift/ubi8-s2i-web-app --imageTag=10.x --build.env OUTPUT_DIR=dist/angular-web-app --expose
    ```
    <br />
+   
+   > NOTA: Si tiene alguna inquietud sobre el despliegue de la aplicación puede consultar <a href="https://github.com/emeloibmco/ROKS-Angular-HandsOn-4.4#despliegue-aplicaci%C3%B3n-listas-en-angular-%F0%9F%85%B0%EF%B8%8F"> Despliegue Aplicación Listas en Angular </a>.
+   
+   <br />
 
 ## Clonar repositorio
 <br />
