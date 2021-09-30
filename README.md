@@ -72,7 +72,7 @@ Debe crear un proyecto en el cúal desplegará la aplicación y realizará la co
 1. En la consola de OpenShift cree un nuevo proyecto. Para ello, asegúrese de estar en el rol de ```Developer```, de click en la pestaña ```Project``` y luego ```Create Project```. Allí, asígne un nombre y de click en el botón ```Create```.
 <br />
 
-<p align="center"><img src="Images/Crear-Proyecto.gif"></p>
+<p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/CrearProyecto.gif"></p>
 
 <br />
 
@@ -89,7 +89,7 @@ Debe crear un proyecto en el cúal desplegará la aplicación y realizará la co
    ```
    <br />
 
-   <p align="center"><img src="Images/AccesoProyecto.PNG"></p>
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/oc_proyect.PNG"></p>
 
    <br />
 <br />
