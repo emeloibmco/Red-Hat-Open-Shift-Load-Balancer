@@ -358,11 +358,49 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    
 
 ## Prueba de funcionamiento de ALB for VPC :wrench:
+Para proar el funcionamiento del Load Balancer, siga los pasos que se inidcan para cada caso:
+<br />
+
 * [ALB para solicitudes públicas](#ALB-para-solicitudes-públicas-unlock)
 * [ALB para solicitudes privadas](#ALB-para-solicitudes-privadas-lock)
 <br />
 
 ### ALB para solicitudes públicas :unlock:
+1. Obtenga el External-IP o Load Balancer Ingress. Para ello puede utilizar cualquiera de los siguientes 2 comandos:
+   
+   * Obtenga el servicio:
+   <br />
+   
+   ```
+   oc get svc myloadbalancer -n n<amespace>
+   ```
+   
+   Ejemplo:
+   
+   ```
+   oc get svc myloadbalancer -n angular-web-list
+   ``` 
+   <br />
+   
+   * Decriba el servicio:
+   <br />
+   
+   ```
+    oc describe svc myloadbalancer -n <namespace>
+   ```
+   
+   Ejemplo:
+   
+   ```
+   oc describe svc myloadbalancer -n angular-web-list
+   ``` 
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/url_alb_publico.PNG"></p>
+
+   <br />
+   
+   
 <br />
 
 ### ALB para solicitudes privadas :lock:
