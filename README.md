@@ -203,24 +203,24 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
 
 2. Dentro de esta carpeta puede encontrar el archivo ```myloadbalancer.yaml```. Este archivo contiene lo siguiente:
    
-   ```powershell
+   ```bash
    apiVersion: v1
    kind: Service
    metadata:
      name: myloadbalancer
      annotations:
        service.kubernetes.io/ibm-load-balancer-cloud-provider-ip-type: "public"
-       service.kubernetes.io/ibm-load-balancer-cloud-provider-vpc-subnets: "0767-5fe01a4c-03bf-419c-a09e-86ae1bb2af1d"
-       service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: "us-east-2"
+       service.kubernetes.io/ibm-load-balancer-cloud-provider-vpc-subnets: "<subnet_ID>""
+       service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: "<zone>"
    spec:
     type: LoadBalancer
     selector:
-       deployment: listas-1
+       <selector_key>: <selector_value>
     ports:
       - name: http
         protocol: TCP
-        port: 8080
-        targetPort: 8080
+        port: <port>
+        targetPort: <port>
    ```
 <br />
 
