@@ -252,6 +252,7 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    ```
    
    Deberá realizar unas modificaciones a cada archivo con los datos de la subred y aplicación. Para ello con el comando nano abra el archivo y realice los respectivos cambios:
+   
    <br />
    
    * **ALB público**
@@ -305,6 +306,7 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    <br />
    
    Cuando termine de aplicar los cambios presione ```Ctrl s``` para guardar y ```Ctrl x``` para salir del editor.
+   
    <br />
 
 3. Cree el servicio del Load Balancer con el comando:
