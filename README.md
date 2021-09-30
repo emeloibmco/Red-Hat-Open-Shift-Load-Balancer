@@ -1,4 +1,4 @@
-# Red Hat OpenShift - Load-Balancer ☁
+# Red Hat OpenShift - Load-Balancer ☁ <img width="25" src="Images/logo_oc.png.png">
 
 <br />
 
