@@ -140,6 +140,33 @@ Para realizar la prueba de funcionmaiento del Load Balancer, se desplegará la a
    <br />
 
 ## Clonar repositorio
+Antes de realizar la respectiva configuración para los Load Balancer debe clonar este repositorio, el cual contiene los archivos necesarios para llevar a cabo el procedimiento. Para ello, realice lo siguiente:
+<br />
+
+1. Salga de la carpeta *AngularWebList* ```cd ..```.
+2. Clone el repositorio con el comando:
+   
+   ```
+   git clone https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer
+   ```
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/ClonarRepoLB.PNG"></p>
+
+   <br />
+
+2. Acceda a la carpeta ```Red-Hat-Open-Shift-Load-Balancer``` con:
+
+   ```
+   cd Red-Hat-Open-Shift-Load-Balancer/
+   ```
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/cd_carpeta_LB.PNG"></p>
+
+   <br />
+   
+
 <br />
 
 ## Configurar ALB for VPC :cloud:
