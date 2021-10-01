@@ -400,7 +400,7 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
 
    <br />
    
-2. Para probar el funcionamiento del Load Balancer puede realizar dos procedimiento:
+2. Para verificar el funcionamiento del Load Balancer puede realizar dos procedimientos:
    <br />
    
    * Use el comando ```curl```, el External-IP y el puerto del Load Balancer y observe la respuesta de la aplicación mediante IBM Coud Shell. Para ello coloque:
@@ -709,7 +709,7 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
 
    <br />
    
-2. Para probar el funcionamiento del Load Balancer puede realizar dos procedimiento:
+2. Para verificar el funcionamiento del Load Balancer puede realizar tres procedimientos:
    <br />
    
    * Use el comando ```curl```, el External-IP y el puerto del Load Balancer y observe la respuesta de la aplicación mediante IBM Coud Shell. Para ello coloque:
@@ -749,6 +749,26 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      <br />
 
      <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/NLB%20images/browser_nlb.PNG"></p>
+
+     <br />
+     
+   * Acceda mediante el nombre del host. Para ello, en el servicio ubique el ```External load balancer``` y colóquelo en el navegador junto con el puerto. De la siguiente manera:
+   
+     ```
+     <External load balancer>:port
+     ```
+
+     Ejemplo:
+
+     ```
+     c2a0616c-us-east.lb.appdomain.cloud:8080
+     ``` 
+     <br />
+     
+     Si ha creado correctamente el servicio Network Load Balancer para la red pública, podrá observar la aplicación funcionando.     
+     <br />
+
+     <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/NLB%20images/nlb-ok2.gif"></p>
 
      <br />
 
