@@ -492,7 +492,17 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se indican pa
    <br />
 
 3. Tal y como se indicó en los requisitos, necesita una VSI Ubuntu en VPC. Desde esta VSI se realizará la prueba de funcionamiento del Load Balancer, teniendo en cuenta que es red privada y tanto la VSI como el Load Balancer se encuentran en la misma subred. Acceda a la VSI con su respectiva IP y contraseña. Utilice el comando:
+   
+     ```    
+     ssh root@ip
+     ```
 
+     Ejemplo:
+
+     ```
+     ssh root@169.63.183.204
+     ``` 
+   
      <br />
 
      <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/vsi_ssh.PNG"></p>
