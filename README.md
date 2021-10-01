@@ -416,7 +416,7 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      ``` 
      <br />
      
-     Si la conexión es correcta podrá observar la respuesta de la aplicación.
+     Si ha creado correctamente el servicio Application Load Balancer para la red pública, podrá observar la respuesta de la aplicación.
      
      <br />
 
@@ -437,7 +437,7 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      ``` 
      <br />
      
-     Si la conexión es correcta podrá observar la aplicación funcionando correctamente.
+     Si ha creado correctamente el servicio Application Load Balancer para la red pública, podrá observar la aplicación funcionando.
      
      <br />
 
@@ -532,7 +532,7 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      ``` 
      <br />
      
-     Si la conexión es correcta podrá observar la respuesta de la aplicación.
+     Si ha creado correctamente el servicio Application Load Balancer para la red privada, podrá observar la respuesta de la aplicación.
      <br />
 
      <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/curl_alb_privado.PNG"></p>
@@ -551,7 +551,7 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      telnet 10.241.64.14 8080
      ``` 
      
-     Si la conexión es correcta podrá observar que se ha conectado a la IP.
+     Si ha creado correctamente el servicio Application Load Balancer para la red pública, podrá observar que se ha conectado a la IP.
      <br />
 
      <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/telnet_alb_publico.PNG"></p>
@@ -725,7 +725,7 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      ``` 
      <br />
      
-     Si la conexión es correcta podrá observar la respuesta de la aplicación.
+     Si ha creado correctamente el servicio Network Load Balancer para la red pública, podrá observar la respuesta de la aplicación.
      
      <br />
 
@@ -746,7 +746,7 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      ``` 
      <br />
      
-     Si la conexión es correcta podrá observar la aplicación funcionando correctamente.
+     Si ha creado correctamente el servicio Networks Load Balancer para la red pública, podrá observar la aplicación funcionando.
      
      <br />
 
