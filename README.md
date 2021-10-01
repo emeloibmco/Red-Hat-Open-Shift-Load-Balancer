@@ -804,9 +804,10 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      <br />
 
 ## Referencias :mag:
+* <a href="https://cloud.ibm.com/docs/vpc?topic=vpc-nlb-vs-elb&locale=en">Load balancers for VPC overview</a>.
 * <a href="https://cloud.ibm.com/docs/openshift?topic=openshift-vpc-lbaas">VPC: Exposing apps with load balancers for VPC</a>.
 <br />
 
 ## Autores :black_nib:
-Equipo IBM Cloud Tech Sales Colombia.
+Equipo *IBM Cloud Tech Sales Colombia*.
 <br />
