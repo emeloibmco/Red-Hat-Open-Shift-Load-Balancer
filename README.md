@@ -18,7 +18,7 @@ Si implemente un servicio de Load Balancer ALB público, la forma en que puede a
 
 Si desea trabajar con un Load Balancer NLB público, podrá acceder a la aplicación mediante una dirección IP externa que se asigna al servicio. En la red privada no hay soporte para los NLB. En comparación con los ALB, los VPC NLB proporcionan varias ventajas, como por ejemplo:
 
-* Mejor rendimiento mediante el retorno directo de servidor.
+* Mayor rendimiento.
 * Disminuye la cantidad de tráfico.
 * Conservación de direcciones IP de origen en todas las solicitudes de cliente de forma predeterminada.
 <br />
