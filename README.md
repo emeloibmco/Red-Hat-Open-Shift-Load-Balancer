@@ -473,7 +473,7 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se indican pa
 
    <br />
    
-2. Haga ping a la External-IP de su aplicación y obtenga la IP privada. Para este caso, teniendo en cuenta que la solicitudes son en la red privada, cuando haga ping no obtendrá respuesta, pero podrá identificar la IP.
+2. Haga ping al External-IP de su aplicación y obtenga la IP privada. Para este caso, teniendo en cuenta que la solicitudes son en la red privada, cuando haga ping no obtendrá respuesta, pero podrá identificar la IP.
 
    <br />
 
