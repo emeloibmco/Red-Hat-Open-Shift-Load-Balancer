@@ -347,7 +347,7 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
 
    <br />
 
-4. Verifique el servicio ha sido creado. Para ello, cambia el rol a ```Administrator``` y seleccione la opción ```Networking``` ➡ ```services```. Identifique los servicios ```myloadbalancer``` y ```myloadbalancerprivate``` que han sido creados.
+4. Verifique que el servicio se ha creado con éxito. Para ello, cambia el rol a ```Administrator``` y seleccione la opción ```Networking``` ➡ ```services```. Identifique los servicios ```myloadbalancer``` y ```myloadbalancerprivate```.
    
    <br />
 
@@ -653,7 +653,7 @@ Al configurar un Network Load Balancer (ALB) puede exponer su aplicación a la r
 
    <br />   
    
-4. Verifique el servicio ha sido creado. Para ello, cambia el rol a ```Administrator``` y seleccione la opción ```Networking``` ➡ ```services```. Identifique el servicio ```vpc-nlb-publico``` que ha sido creado.
+4. Verifique que el servicio se ha creado con éxito. Para ello, cambia el rol a ```Administrator``` y seleccione la opción ```Networking``` ➡ ```services```. Identifique el servicio ```vpc-nlb-publico```.
    
    <br />
 
