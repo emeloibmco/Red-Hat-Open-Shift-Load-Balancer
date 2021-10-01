@@ -473,8 +473,58 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se indican pa
 
    <br />
    
-   
+2. Haga ping al external endpoint de su aplicación y obtenga la IP privada. Para este caso, teniendo en cuenta que la solicitudes son en la red privada, cuando haga ping no obtendrá respuesta, pero podrá identificar la IP.
+
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/ping_privada.PNG"></p>
+
+   <br />
+
+3. Tal y como se indicó en los requisitos, necesita una VSI Ubuntu en VPC. Desde esta VSI se realizará la prueba de funcionamiento del Load Balancer, teniendo en cuenta que es red privada y tanto la VSI como el Load Balancer se encuentran en la misma subred. Acceda a la VSI con su respectiva IP y contraseña.
+     
+     <br />
+
+     <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/vsi_ssh.PNG"></p>
+
+     <br />
+
+4. Se realizarán 2 pruebas que permiten ver el funcionamiento del Load Balancer en la red privada. Complete los siguientes pasos:
 <br />
+
+   * Dentro de la VSI use el comando ```curl```, la IP privada obtenida y el puerto del Load Balancer. Luego observe la respuesta de la aplicación. Para ello coloque:
+   
+     ```
+     curl <ip-privada>:port
+     ```
+
+     Ejemplo:
+
+     ```
+     curl 10.241.64.14:8080
+     ``` 
+     <br />
+
+     <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/curl_alb_privado.PNG"></p>
+
+     <br />
+     
+   * Use el comando ```telnet```, la IP privada obtenida y el puerto del Load Balancer. Luego observe la respuesta de la aplicación. Para ello coloque:
+
+     ```
+     telnet <ip-privada> port
+     ```
+
+     Ejemplo:
+
+     ```
+     telnet 10.241.64.14 8080
+     ``` 
+     <br />
+
+     <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/telnet_alb_publico.PNG"></p>
+
+     <br />
 
 ## Configurar NLB for VPC :closed_lock_with_key:
 <br />
