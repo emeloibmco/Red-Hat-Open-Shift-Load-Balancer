@@ -358,7 +358,7 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    
 
 ## Prueba de funcionamiento de ALB for VPC :wrench:
-Para proar el funcionamiento del Load Balancer, siga los pasos que se indican para cada caso:
+Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que se indican para cada caso:
 <br />
 
 * [ALB para solicitudes públicas](#ALB-para-solicitudes-públicas-unlock)
@@ -664,7 +664,79 @@ Al configurar un Network Load Balancer (ALB) puede exponer su aplicación a la r
    
 
 ## Prueba de funcionamiento de NLB for VPC :computer:
+Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que se indican a continuación:
 <br />
+
+1. Obtenga el External-IP o Load Balancer Ingress. Para ello puede utilizar cualquiera de los siguientes 2 comandos:
+   
+   * Obtenga el servicio:
+   <br />
+   
+   ```
+   oc get svc vpc-nlb-publico -n n<amespace>
+   ```
+   
+   Ejemplo:
+   
+   ```
+   oc get svc vpc-nlb-publico -n angular-web-list
+   ``` 
+   <br />
+   
+   * Decriba el servicio:
+   <br />
+   
+   ```    
+   oc describe svc vpc-nlb-publico -n <namespace>
+   ```
+   
+   Ejemplo:
+   
+   ```
+   oc describe svc vpc-nlb-publico -n angular-web-list
+   ``` 
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/NLB%20images/url_nlb_publico.PNG"></p>
+
+   <br />
+   
+2. Para probar el funcionamiento del Load Balancer puede realizar dos procedimiento:
+   <br />
+   
+   * Use el comando ```curl```, el External-IP y el puerto del Load Balancer y observe la respuesta de la aplicación mediante IBM Coud Shell. Para ello coloque:
+   
+     ```
+     curl <external-ip>:port
+     ```
+
+     Ejemplo:
+
+     ```
+     curl 169.63.188.153:8080
+     ``` 
+     <br />
+
+     <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/NLB%20images/curl_nlb.PNG"></p>
+
+     <br />
+ 
+    * En el navegador visualice la aplicación mediante el External-IP y el puerto del Load Balancer. Para ello coloque:
+   
+     ```
+     <external-ip>:port
+     ```
+
+     Ejemplo:
+
+     ```
+     169.63.188.153:8080
+     ``` 
+     <br />
+
+     <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/NLB%20images/browser_nlb.PNG"></p>
+
+     <br />
 
 ## Referencias :mag:
 * <a href="https://cloud.ibm.com/docs/openshift?topic=openshift-vpc-lbaas">VPC: Exposing apps with load balancers for VPC</a>.
