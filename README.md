@@ -566,6 +566,85 @@ Al configurar un Network Load Balancer (ALB) puede exponer su aplicación a la r
 
    <br />
 
+2. El archivo que se utilizará en este caso contiene:
+   <br />
+      
+   ```cmd
+   apiVersion: v1
+   kind: Service
+   metadata:
+    name: vpc-nlb-publico
+    annotations:
+      service.kubernetes.io/ibm-load-balancer-cloud-provider-enable-features: "nlb"
+      service.kubernetes.io/ibm-load-balancer-cloud-provider-ip-type: "public"
+      service.kubernetes.io/ibm-load-balancer-cloud-provider-vpc-subnets: "<subnet_ID>"
+      service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: "<zone>"
+   spec:
+    type: LoadBalancer
+    selector:
+      <selector_key>: <selector_value>
+    ports:
+     - name: http
+       protocol: TCP
+       port: <port>
+       targetPort: <port>
+    externalTrafficPolicy: Local
+   ```
+   <br />
+   
+   
+   Deberá realizar una serie de modificaciones en el archivo con los datos de la subred y aplicación. Para ello con el comando nano abra el archivo y realice los respectivos cambios:
+   
+   <br />
+    
+   ```
+   nano vpc-nlb-publico.yml
+   ```
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/NLB%20images/nano_nlb_publico.PNG"></p>
+
+   <br />   
+   
+   Los cambios que debe realizar son:
+   * En la línea ```service.kubernetes.io/ibm-load-balancer-cloud-provider-vpc-subnets: "<subnet_ID>"``` coloque entre comillas el ID de su subred. Ejemplo ```service.kubernetes.io/ibm-load-balancer-cloud-provider-vpc-subnets: "0767-5fe01a4c-03bf-419c-a09e-86ae1bb2af1d"```. Para encontrar el ID de la subred, en la consola de IBM dentro del clúster que está trabajando, seleccione la pestaña ```Worker nodes```, de click sobre uno de los nodos trabajadores y visualice el ID en la sección ```Subnet```.
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/Id_Subnet.PNG"></p>
+
+   <br />
+   
+   * En la línea ```service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: "<zone>"``` coloque entre comillas la zona en la cual está desplegado su clúster. Ejemplo ```service.kubernetes.io/ibm-load-balancer-cloud-provider-zone: "us-east-2"```.
+   <br />
+   
+   * En la sección ```selector``` reemplace la línea ```<selector_key>: <selector_value>``` con la clave y valor del selector, que puede localizar en los labels del pod de la aplicación. Ejemplo ```deployment: listas-1```. En la siguiente imagen se muestra donde se ubica el selector.
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/Labels.gif"></p>
+
+   <br />
+   
+   * En la sección ```ports``` reemplace la variable ```<port>``` con el valor del puerto que se ubica también en el .yaml del pod de la aplicación. En la siguiente imagen puede observar donde se encuentra el puerto.
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/Puerto.gif"></p>
+
+   <br />
+   
+   Cuando termine de aplicar los cambios presione ```Ctrl s``` para guardar y ```Ctrl x``` para salir del editor.
+   
+   <br />
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
 ## Prueba de funcionamiento de NLB for VPC :computer:
 <br />
 
