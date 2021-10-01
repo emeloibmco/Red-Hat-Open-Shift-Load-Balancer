@@ -1,6 +1,6 @@
 # Red Hat OpenShift - Load Balancer <img width="26" src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/logo_oc.png">☁
 
-Si desea exponer una aplicación en un clúster de OpenShift en VPC, puede optar por implementar un *Application Load Balancer (ALB) for VPC* de capa 7 o un *Network Load Balancer (NLB) for VPC* de capa 4. En la tabla que se presenta a continuación, puede observar un breve comparación entre los tipos de Load Balancer en base a 4 características:
+Si desea exponer una aplicación en un clúster de OpenShift en VPC, puede optar por implementar un *Application Load Balancer (ALB) for VPC* de capa 7 o un *Network Load Balancer (NLB) for VPC* de capa 4. En la tabla que se presenta a continuación, puede observar una breve comparación entre los tipos de Load Balancer en base a 4 características:
 
 <br />
 
