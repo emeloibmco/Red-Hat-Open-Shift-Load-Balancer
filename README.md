@@ -475,6 +475,16 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se indican pa
    
 2. Haga ping al External-IP de su aplicación y obtenga la IP privada. Para este caso, teniendo en cuenta que la solicitudes son en la red privada, cuando haga ping no obtendrá respuesta, pero podrá identificar la IP.
 
+   ```    
+   ping <external-ip>
+   ```
+
+   Ejemplo:
+
+   ```
+   ping 1c066af6-us-east.lb.appdomain.cloud
+   ``` 
+
    <br />
 
    <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/ping_privada.PNG"></p>
@@ -483,16 +493,6 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se indican pa
 
 3. Tal y como se indicó en los requisitos, necesita una VSI Ubuntu en VPC. Desde esta VSI se realizará la prueba de funcionamiento del Load Balancer, teniendo en cuenta que es red privada y tanto la VSI como el Load Balancer se encuentran en la misma subred. Acceda a la VSI con su respectiva IP y contraseña. Utilice el comando:
 
-     ```    
-     ping <external-ip>
-     ```
-
-     Ejemplo:
-
-     ```
-     ping 1c066af6-us-east.lb.appdomain.cloud
-     ``` 
-     
      <br />
 
      <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/vsi_ssh.PNG"></p>
