@@ -1,13 +1,19 @@
 # Red Hat OpenShift - Load Balancer <img width="26" src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/logo_oc.png">☁
+<br />
 
 | ***CARACTERÍSTICA*** | ***Application Load Balancer (ALB) for VPC*** | ***Network Load Balancer (NLB) for VPC*** |
-|     :---:      |     :---:      |
+|     :---:      |     :---:      |     :---:      |
 | Versión de OpenShift soportada  | Todas las versiones | Versión 4.6 y posterior |
 | Capa de transporte  | Capa 7 | Capa 4 |
 | Acceso a las aplicaciones  | Nombre de host | Nombre de host y dirección IP estática |
 | Protocolos soportados  | TCP | TCP |
 | Tipos de Load Balancer  | Público y privado | Público |
 
+<br />
+
+| ***INFORMACIÓN DEL DISPOSITIVO GATEWAY DE VPN*** | ***REMOTO (PROVEEDOR)*** |
+|     :---:      |     :---:      |
+| IP Peer  | 169.47.83.154 |
 <br />
 
 ## Índice  📰
