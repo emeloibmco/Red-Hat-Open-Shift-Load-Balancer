@@ -1,4 +1,7 @@
 # Red Hat OpenShift - Load Balancer <img width="26" src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/logo_oc.png">☁
+
+Si desea exponer una aplicación en un clúster de OpenShift en VPC, puede optar por implementar un *Application Load Balancer (ALB) for VPC* de capa 7 o un *Network Load Balancer (NLB) for VPC* de capa 4. En la tabla que se presenta a continuación, puede observar un breve comparación entre los tipos de Load Balancer en base a 4 características:
+
 <br />
 
 | ***CARACTERÍSTICA*** | ***Application Load Balancer (ALB) for VPC*** | ***Network Load Balancer (NLB) for VPC*** |
@@ -11,23 +14,32 @@
 
 <br />
 
-| ***INFORMACIÓN DEL DISPOSITIVO GATEWAY DE VPN*** | ***REMOTO (PROVEEDOR)*** |
-|     :---:      |     :---:      |
-| IP Peer  | 169.47.83.154 |
+Si implemente un servicio de Load Balancer ALB público, la forma en que puede acceder a su aplicación será mediante el nombre del host que se asigna al servicio. Por otro lado, si la implementación es de un ALB privado, podrá acceder a la aplicación mediante los sistemas que estén conectados a la subred, por ejemplo, mediante una VSI en VPC.
+
+Si desea trabajar con un Load Balancer NLB público, podrá acceder a la aplicación mediante una dirección IP externa que se asigna al servicio. En la red privada no hay soporte para los NLB. En comparación con los ALB, los VPC NLB proporcionan varias ventajas, como por ejemplo:
+
+* Mejor rendimiento mediante el retorno directo de servidor.
+* Disminuye la cantidad de tráfico.
+* Conservación de direcciones IP de origen en todas las solicitudes de cliente de forma predeterminada.
+<br />
+
+La presente guía se enfoca en la configuración e implementación de Load Balancer ALB y NLB en un clúster de OpenShift en VPC. Se utilizará una aplicación de prueba, con la cual se realizarán las pruebas de solicitudes públicas y privadas en cada caso.
+
 <br />
 
 ## Índice  📰
 1. [Pre-Requisitos](#Pre-Requisitos-pencil)
-2. [Acceder al clúster](#Acceder-al-clúster)
-3. [Crear proyecto](#Crear-proyecto)
-4. [Desplegar aplicación Angular Web List](#Desplegar-aplicación-Angular-Web-List)
-5. [Instalar plugin y clonar repositorio](#Instalar-plugin-y-clonar-repositorio)
-6. [Configurar ALB for VPC](#Configurar-ALB-for-VPC-cloud)
-7. [Prueba de funcionamiento de ALB for VPC](#Prueba-de-funcionamiento-de-ALB-for-VPC-wrench)
-8. [Configurar NLB for VPC](#Configurar-NLB-for-VPC-closed_lock_with_key)
-9. [Prueba de funcionamiento de NLB for VPC](#Prueba-de-funcionamiento-de-NLB-for-VPC-computer)
-10. [Referencias](#Referencias-mag)
-11. [Autores](#Autores-black_nib)
+2. [Conceptos clave](#Conceptos-clave-key)
+3. [Acceder al clúster](#Acceder-al-clúster-round_pushpin)
+4. [Crear proyecto](#Crear-proyecto-bulb)
+5. [Desplegar aplicación Angular Web List](#Desplegar-aplicación-Angular-Web-List-a)
+6. [Instalar plugin y clonar repositorio](#Instalar-plugin-y-clonar-repositorio-gear)
+7. [Configurar ALB for VPC](#Configurar-ALB-for-VPC-hammer)
+8. [Prueba de funcionamiento de ALB for VPC](#Prueba-de-funcionamiento-de-ALB-for-VPC-desktop_computer)
+9. [Configurar NLB for VPC](#Configurar-NLB-for-VPC-hammer_and_wrench)
+10. [Prueba de funcionamiento de NLB for VPC](#Prueba-de-funcionamiento-de-NLB-for-VPC-computer)
+11. [Referencias](#Referencias-mag)
+12. [Autores](#Autores-black_nib)
 <br />
 
 ## Pre Requisitos :pencil:
@@ -38,7 +50,12 @@
 * Tener un clúster de OpenShift en VPC.
 <br />
 
-## Acceder al clúster
+## Conceptos clave :key:
+* Comando ```curl```: abreviatura de Client URL. Se utiliza para verificar y probar la conetividad a una URL.
+* Comando ```telnet```: permite probar la conectividad a máquinas remotas.
+<br />
+
+## Acceder al clúster :round_pushpin:
 Para acceder al clúster de OpenShift, complete los siguientes pasos:
 <br />
 
@@ -79,7 +96,7 @@ Para acceder al clúster de OpenShift, complete los siguientes pasos:
 
 <br />
 
-## Crear proyecto
+## Crear proyecto :bulb:
 Debe crear un proyecto en el cúal desplegará la aplicación y realizará la configuración para el Load Balancer. Complete los siguientes pasos:
 <br />
 
@@ -108,7 +125,7 @@ Debe crear un proyecto en el cúal desplegará la aplicación y realizará la co
    <br />
 <br />
 
-## Desplegar aplicación Angular Web List
+## Desplegar aplicación Angular Web List :a:
 Para realizar la prueba de funcionmaiento del Load Balancer, se desplegará la aplicación <a href="https://github.com/emeloibmco/AngularWebList"> Angular Web List</a> en el clúster de OpenShift. Los pasos que debe realizar son los siguientes:
 <br />
 
@@ -153,7 +170,7 @@ Para realizar la prueba de funcionmaiento del Load Balancer, se desplegará la a
 
    <br />
 
-## Instalar plugin y clonar repositorio
+## Instalar plugin y clonar repositorio :gear:
 Antes de realizar la respectiva configuración para los Load Balancer debe instalar un plugin y clonar el presente repositorio, el cual contiene los archivos necesarios para llevar a cabo el procedimiento. Para ello, realice lo siguiente:
 <br />
 
@@ -199,7 +216,7 @@ Antes de realizar la respectiva configuración para los Load Balancer debe insta
    <br />
 
 
-## Configurar ALB for VPC :cloud:
+## Configurar ALB for VPC :hammer:
 Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a la red pública o privada. Dentro de la carpeta ```Archivos ALB```de este repositorio puede encontrar 2 archivos .yaml que contiene las configuraciones necesarias para cada caso. Siga los pasos que se presentan a continuación, teniendo en cuenta el tipo de solicitud (pública o privada) que su aplicación recibirá:
 
 <br />
@@ -371,7 +388,7 @@ Al configurar un Application Load Balancer (ALB) puede exponer su aplicación a 
    
    
 
-## Prueba de funcionamiento de ALB for VPC :wrench:
+## Prueba de funcionamiento de ALB for VPC :desktop_computer:
 Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que se indican para cada caso:
 <br />
 
@@ -572,7 +589,7 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
 
      <br />
 
-## Configurar NLB for VPC :closed_lock_with_key:
+## Configurar NLB for VPC :hammer_and_wrench:
 Al configurar un Network Load Balancer (ALB) puede exponer su aplicación a la red pública. Dentro de la carpeta ```Archivos NLB```de este repositorio puede encontrar un archivo .yaml (```vpc-nlb-publico.yml```) que contiene las configuraciones necesarias. Siga los pasos que se presentan a continuación:
 
 <br />
