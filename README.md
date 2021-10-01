@@ -551,7 +551,20 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se indican pa
      <br />
 
 ## Configurar NLB for VPC :closed_lock_with_key:
+Al configurar un Network Load Balancer (ALB) puede exponer su aplicación a la red pública. Dentro de la carpeta ```Archivos NLB```de este repositorio puede encontrar un archivo .yaml que contiene las configuraciones necesarias. Siga los pasos que se presentan a continuación:
+
 <br />
+
+1. Acceda a la carpeta ```Archivos NLB``` con el comando:
+   
+   ```
+   cd Archivos\ NLB
+   ```
+   <br />
+
+   <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/NLB%20images/carpeta_nlb.PNG"></p>
+
+   <br />
 
 ## Prueba de funcionamiento de NLB for VPC :computer:
 <br />
