@@ -473,7 +473,7 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se indican pa
 
    <br />
    
-2. Haga ping al external endpoint de su aplicación y obtenga la IP privada. Para este caso, teniendo en cuenta que la solicitudes son en la red privada, cuando haga ping no obtendrá respuesta, pero podrá identificar la IP.
+2. Haga ping a la External-IP de su aplicación y obtenga la IP privada. Para este caso, teniendo en cuenta que la solicitudes son en la red privada, cuando haga ping no obtendrá respuesta, pero podrá identificar la IP.
 
    <br />
 
@@ -490,7 +490,6 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se indican pa
      <br />
 
 4. Se realizarán 2 pruebas que permiten ver el funcionamiento del Load Balancer en la red privada. Complete los siguientes pasos:
-<br />
 
    * Dentro de la VSI use el comando ```curl```, la IP privada obtenida y el puerto del Load Balancer. Luego observe la respuesta de la aplicación. Para ello coloque:
    
@@ -503,6 +502,9 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se indican pa
      ```
      curl 10.241.64.14:8080
      ``` 
+     <br />
+     
+     Si la conexión es correcta podrá observar la respuesta de la aplicación.
      <br />
 
      <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/curl_alb_privado.PNG"></p>
@@ -520,6 +522,8 @@ Para proar el funcionamiento del Load Balancer, siga los pasos que se indican pa
      ```
      telnet 10.241.64.14 8080
      ``` 
+     
+     Si la conexión es correcta podrá observar que se ha conectado a la IP.
      <br />
 
      <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/telnet_alb_publico.PNG"></p>
