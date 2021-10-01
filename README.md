@@ -415,6 +415,10 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      curl 123f8e58-us-east.lb.appdomain.cloud:8080
      ``` 
      <br />
+     
+     Si la conexión es correcta podrá observar la respuesta de la aplicación.
+     
+     <br />
 
      <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/curl_alb_publico.PNG"></p>
 
@@ -431,6 +435,10 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      ```
      123f8e58-us-east.lb.appdomain.cloud:8080
      ``` 
+     <br />
+     
+     Si la conexión es correcta podrá observar la aplicación funcionando correctamente.
+     
      <br />
 
      <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/ALB%20images/browser_alb_publico.PNG"></p>
@@ -716,6 +724,10 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      curl 169.63.188.153:8080
      ``` 
      <br />
+     
+     Si la conexión es correcta podrá observar la respuesta de la aplicación.
+     
+     <br />
 
      <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/NLB%20images/curl_nlb.PNG"></p>
 
@@ -732,6 +744,10 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      ```
      169.63.188.153:8080
      ``` 
+     <br />
+     
+     Si la conexión es correcta podrá observar la aplicación funcionando correctamente.
+     
      <br />
 
      <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/NLB%20images/browser_nlb.PNG"></p>
