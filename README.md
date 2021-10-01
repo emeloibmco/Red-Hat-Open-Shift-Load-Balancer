@@ -725,8 +725,7 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      ``` 
      <br />
      
-     Si ha creado correctamente el servicio Network Load Balancer para la red pública, podrá observar la respuesta de la aplicación.
-     
+     Si ha creado correctamente el servicio Network Load Balancer para la red pública, podrá observar la respuesta de la aplicación.     
      <br />
 
      <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/NLB%20images/curl_nlb.PNG"></p>
@@ -746,8 +745,7 @@ Para realizar la prueba de funcionamiento del Load Balancer, siga los pasos que 
      ``` 
      <br />
      
-     Si ha creado correctamente el servicio Networks Load Balancer para la red pública, podrá observar la aplicación funcionando.
-     
+     Si ha creado correctamente el servicio Network Load Balancer para la red pública, podrá observar la aplicación funcionando.     
      <br />
 
      <p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/NLB%20images/browser_nlb.PNG"></p>
