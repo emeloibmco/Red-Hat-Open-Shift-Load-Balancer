@@ -27,6 +27,10 @@ La presente guía se enfoca en la configuración e implementación de Load Balan
 
 <br />
 
+<p align="center"><img src="https://github.com/emeloibmco/Red-Hat-Open-Shift-Load-Balancer/blob/main/Cluster%20images/Diagrama.PNG"></p>
+
+<br />
+
 ## Índice  📰
 1. [Pre-Requisitos](#Pre-Requisitos-pencil)
 2. [Conceptos clave](#Conceptos-clave-key)
