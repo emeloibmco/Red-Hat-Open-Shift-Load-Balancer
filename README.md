@@ -130,7 +130,7 @@ Debe crear un proyecto en el cúal desplegará la aplicación y realizará la co
 <br />
 
 ## Desplegar aplicación Angular Web List :a:
-Para realizar la prueba de funcionmaiento del Load Balancer, se desplegará la aplicación <a href="https://github.com/emeloibmco/AngularWebList"> Angular Web List</a> en el clúster de OpenShift. Los pasos que debe realizar son los siguientes:
+Para realizar la prueba de funcionamiento del Load Balancer, se desplegará la aplicación <a href="https://github.com/emeloibmco/AngularWebList"> Angular Web List</a> en el clúster de OpenShift. Los pasos que debe realizar son los siguientes:
 <br />
 
 1. En el IBM Cloud Shell, clone el repositorio que contiene los archivos de la aplicación. Utilice el comando:
